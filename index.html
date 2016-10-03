@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LMU | Programming / Creative Applications - Fall 2016</title>
+  
+  <link rel="stylesheet" href="main.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+  <style>
+    html,body { 
+      height: 100%; 
+      margin: 0;
+      width: 100%;
+      font-family: 'Noto Sans', sans-serif !important;
+    }
+
+    h1, h2, h3, h4{
+      font-family: 'Noto Sans', sans-serif !important;
+    }
+
+    h3{
+      font-size: 13px;  
+    }
+    #content { 
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px;
+      height: 100%;
+      
+    }
+    #left{
+      width: 15%;
+      height: 100%;
+      display:inline-block;
+      float: left;
+    }
+    #right{
+      width: 55%;
+      height: 100%;
+      display: inline-block;
+      float: left;
+    }
+
+    #sections{
+      list-style: none;
+    }
+
+    nav{
+      padding-top: 50px;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    a:link{
+      color: blue !important;
+    }
+    a:active{
+      color: blue !important;
+    }
+    a:visited{
+      color: blue !important;
+    }
+    #resources{
+      display: none;
+    }
+    #schedule{
+      display: none;
+    }
+    #projects{
+      display: none;
+    }
+
+    .imageContainer img{
+      max-width: 200%;
+      min-width: 100%;
+      padding-bottom: 15px;
+    }
+    
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body id="dma-body">
+    <div id="content">
+      <div id ="left">
+        <div id="classTitle">
+          <h2>Art 182</h2>
+          <h3>Fall 2016</h3>
+        </div>
+        <nav>
+          <ul id="sections">
+            <li id="syllabusLink"><a href="javascript:showOnlyOne('syllabus', 'syllabusLink');">Syllabus</a></li>
+            <li id="scheduleLink"><a href="javascript:showOnlyOne('schedule', 'scheduleLink');">Schedule</a></li>
+            <li id="projectsLink"><a href="javascript:showOnlyOne('projects', 'projectsLink');">Projects<a/></l1>
+            <li id="resourcesLink"><a href="javascript:showOnlyOne('resources', 'resourcesLink');">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="right">
+        <h2>Syllabus <br />LMU Art 182: Programming / Creative Applications <br /> Fall 2016</h2>
+          <h3>Instructor:<h3>
+            <h4>Adam Ferriss (office hours by appointment)</h4>
+            <h4>adam.ferriss@lmu.edu</a>
+            <br /><br />
+            <h3>Meeting Times:<h3>
+            <h4>Monday &amp; Wednesday 7:10pm - 9:40pm</h4>
+            <h4>Burns 214</h4>
+            <h4>3 Units</h4>
+
+            <h3>Class website: <a href="https://adamferriss.com/fall16/182">https://adamferriss.com/fall16/182</a></h3>
+            <h4><a href="https://adamferriss.com/fall16/182"></a></h4>
+
+            <br /><br />
+        <div id="syllabus" class="section" >
+          
+          <h3>Overview</h3>
+            <p>
+                This course is an introduction to writing code in the context of the visual arts and design. The concepts taught in this course will provide a foundation for future courses in generative/interactive design, media art, and the internet.
+            </p>
+            <br />
+
+          <h3>Introduction</h3>
+          <p>
+           Art 182 is an introductory computer programming course that explores the use of open source programming environments to create media based artwork. We will explore the history of media and computer based artworks as well as contemporary practitioners of the subject. Students will be introduced to the fundamental concepts of programming through the study of the Processing and p5.js programming environments. Assignments and readings will cover topics such as interactivity, typography, animation, and games. Classes will alternate between workshops / lectures and in class studio time.
+Studio, six hours.
+Outside Study, six hours.
+          </p>
+
+          <h3>Course Goals</h3>
+          <p>
+            1. Develop an understanding of the principles of programming. 
+            <br />
+            2. Ability to use programming as a medium for creative work. 
+            <br />
+            3. Awareness of the field, its pioneers and contemporary practitioners. 
+            <br />
+            4. The ability to excel in future courses about the Internet, animation, interactive media, and game design.
+          </p>
+
+          <h3>Grading</h3>
+          <p>60% divided between four projects (12% each)<br />
+          30% final project<br />
+          10% participation
+          </p>
+
+          <h3>Attendance</h3>
+          <p>
+            Learning to program is a cumulative effort, each new thing building on what you have learned before. Missing class can substantially set you back in this process, therefore it is very important that you attend every class. Three unexcused absences will lower your final grade by one unit (i.e. an A will become an B). With each additional unexcused absence, the grade will drop an additional unit. If you are 15 minutes late, you will receive a tardy. 3 tardies will turn into 1 absence. If there is an emergency or otherwise extenuating circumstances that prevent you from being on time or attending class, please e-mail me.
+          </p>
+
+          <h3>Cell Phones and Food / Drink</h3>
+          <p>
+            Please no cell phones, checking e-mail or facebook during class. Food and drinks are not permitted in the computer lab.
+          </p>
+
+          <h3>Academic Honesty </h3>
+          <p>
+            Academic dishonesty will be treated as an extremely serious matter, with serious consequences that can range from receiving no credit for assignments/tests to expulsion. It is never permissible to turn in any work that has been copied from another student or copied from a source (including Internet) without properly acknowledging the source. It is your responsibility to make sure that your work meets the standard of academic honesty set forth in the “LMU Honor Code and Process” which appears in the LMU Bulletin 2010-2011 (see http://www.lmu.edu/about/services/registrar/Bulletin/Bulletins_in_PDF_ Format.htm.) 
+          </p>
+
+          <h3>Special Accommodations</h3>
+          <p>
+            Students with special needs who require reasonable modifications, special assistance, or accommodations in this course should promptly direct their request to the Disability Support Services (DSS) Office. Any student who currently has a documented disability (ADHD, Autism Spectrum Disorder, Learning, Physical, or Psychiatric) needing academic accommodations should contact the DSS Office (Daum Hall 2nd floor, 310-338-4216) as early in the semester as possible. All discussions will remain confidential. Please visit www.lmu.edu/dss for additional information. 
+          </p>
+
+          <h3>Tentative Nature of Syllabus</h3>
+          <p>
+            If needed, this syllabus may be revised to better suit the class. Students are responsible for keeping up with any changes distributed during e-mail or in class.
+          </p>
+          <br />
+
+          <p>
+            Help out your classmates, make comments, ask lots of questions! This class is a collaboration between all of us.
+          </p>
+
+          <br />
+
+          <p><b>If you are feeling left behind, stuck, or frustrated in any way, please let me know immediately. I am here to help you :D
+          </b></p>      
+        </div>
+
+        <div id="projects" class="section">
+          
+          <h3><a href="javascript:showCurrentAssignment('#assignment0');">Assignment 0 -- Due Weds August 31<a></h3>
+          <div id="assignment0">
+          <p>Read the <a href="https://www.dropbox.com/s/j4r7r206mt1pcfp/form%2Bcode_chap1and2.pdf?dl=0">first two chapters of the Form + Code book (What is code? & Form and Computers)</a>, then create a short and engaging 3-5 minute presentation / slideshow containing your favorite instance of the following:
+            <br /><br />
+            1. One set of instructions or an algorithm
+            <br />
+            2. One piece of software
+            <br />
+            3. One visual artwork or design that utilizes instructions, algorithms, and/or software
+          </p>
+          <br />
+        </div>
+        
+          <h3><a href="javascript:showCurrentAssignment('#project1PartA');">Project 1, Part A -- Due Weds September 7</a></h3>
+          <div id="project1PartA">
+           
+          <h4><a href="https://www.dropbox.com/s/qtorye0ho824zpc/face_test.pde?dl=0">Code From class - 8/31</a></h4><br />
+          <p>
+            Design an abstract or simplified face composed of 10-20 basic shapes. Look at the links and images below as a reference. Create two emotions for this face, one neutral, and one exaggerated. For instance, a very sad frown, and a neutral expression. Have a plan in mind for how the face might transition from neutral to exaggerated. You may only move, rotate, and scale the facial features, it should not “pop” from one expression to the next. Think about all the different faces we’ve looked at and how you can construct a face both human or non-human. 
+            <br /><br />
+            Before you begin coding, sketch this face out either on paper, or in photoshop/illustrator/your software of choice and bring them to class on Wednesday 9/7. Also arrive with your neutral face translated into Processing code. Make sure your sketch size is set at 720x720px.
+          </p> 
+          <p>
+            For Wednesday 9/7, also read the following chapters in the <a href="https://www.dropbox.com/s/zgmlfvt0z50kxcv/gettingStartedWithProcessing.pdf?dl=0">getting started with processing PDF.</a> Pay special attention to The variables chapter!
+            <br /><br />
+            1. Hello <br />
+            2. Starting to Code<br />
+            3. Draw<br />
+            4. Variables<br />
+            5. Response
+            <br /><br />
+            Also watch the following Learning Processing Videos:<br /><br />
+            <a href="https://vimeo.com/71517004">How to use processing</a><br />
+            <a href="https://vimeo.com/71517006">RGB Color</a><br />
+            <a href="https://vimeo.com/71766675">Variables</a><br />
+            <a href="https://vimeo.com/71597762">Flow</a><br />
+            <a href="https://vimeo.com/71597763">Built-in Variables</a><br />
+          </p>
+            <h4> Inspiration!</h4>
+            <a href="https://en.wikipedia.org/wiki/Apophenia">Apophenia</a><br />
+            <a href="https://en.wikipedia.org/wiki/Pareidolia">Pareidolia</a><br />
+
+            <a href="http://universaleverything.com/projects/lovebytes/">Love Bytes</a><br />
+            <a href="https://vimeo.com/1191719">Nokia / Friends / Heathrow</a> <br />
+            Bruno Munari<br />
+            Early Disney Sketches<br />
+            Kasemir Malevich<br />
+            Picasson &amp; other cubist sculptures<br />
+            Isamu Noguchi <br />
+            Joge-e &amp; two way pictures<br />
+            David Hockney<br />
+            Emojis &amp; Mac Finder Face<br />
+            <br /><br />
+
+            <div class="imageContainer" id="project1Imgs"></div>
+             
+          </div>
+
+          <h3><a href="javascript:showCurrentAssignment('#project1PartB');">Project 1, Part B -- Due Weds September 14</a></h3>
+             <div id="project1PartB">
+              <p>
+                Add variables to your project from Part A so that the face can move between the neutral and exaggerated expressions by changing the value of the variables. The variables can change the color, position, scale, rotation, etc. of your face. Don't forget to write comments in your code so that you know the range of the variable i.e int x = 100; // left eye x - coordinate with a value between 100 and 200. Be careful when tring out rotation and scale, they can be tricky.
+
+                <br /><br /> Bring this code to class on Monday September 12 to work on during in class studio time.
+
+                One more reference for you! <a href="http://www.mokafolio.de/works/Weird-Faces">Mattias Dorfelt's Weird Faces</a>
+              </p>
+             </div>
+            
+            <h3><a href="javascript:showCurrentAssignment('#project1PartC');">Project 1, Part C -- Due Mon September 26</a></h3>
+            <div id="project1PartC">
+              <p>
+                Modify your code from part B so that the face changes fluidly from the neutral expression to the strong expression as you move the mouse across the screen. The map function will be your friend for this. You will need to include a setup() and draw() to your project so that variables in the draw() can be updated on the fly. Think about how you can develop in-between expressions and make the face as dynamic and emotive as possible. I have put together <a href="https://adamferriss.com/fall16/182/9-19/pinkAlien/pinkAlien.pde">an example sketch for you to take a look at.</a>
+
+                <br />
+                <br />
+                Bring your completed code to class on Monday Sept 26 ready to hand in.
+              </p>
+            </div>
+            <h3><a href="javascript:showCurrentAssignment('#project2PartA');">Project 2, Part A -- Due Weds September 28</a></h3>
+              <div id="project2PartA"><br />
+                <p>
+                  Look at the following readings/videos for Wednesday Sept. 28: <br /><br />Chapter 6 -- Media, in the <u><a href="https://www.dropbox.com/s/zgmlfvt0z50kxcv/gettingStartedWithProcessing.pdf?dl=0">Getting Started with Processing PDF</a></u><br />
+                  <a href="https://www.processing.org/tutorials/typography/">Typography</a><br />
+                  <a href="https://www.processing.org/tutorials/interactivity/">Interactivity</a><br />
+                  <a href="https://vimeo.com/71898713">Boolean Expressions</a><br />
+                  <a href="https://vimeo.com/71904527">If, Else If, Else</a><br />
+                  <a href="https://vimeo.com/71904582">Logical Operators: and, or</a><br />
+                  <a href="https://vimeo.com/106211697">Boolean Variables</a><br /><br />
+                  For project 2, you will create an interactive non-linear (i.e. choose your own adventure) story in the form of a <a href="https://en.wikipedia.org/wiki/Photonovel">photo-novel</a> or comic book(A photo-novel is essentially a comic that uses photos instead of drawings). Your story should have a minimum of 10 and a maximum of 20 scenes and have at least three different conclusions. Try to keep it simple and spend more time thinking about the interactions, images, and text.
+
+                  <br /><br />
+                  Make your project 1280 x 720 px in size.
+                  <br /><br />
+                  For part A, complete a <a href="https://twinery.org"> script draft of your story in twine</a> and a PDF storyboard with images and text diagramming the flow of your story. Be ready to present your story to the class!
+                  <br /><br />
+
+                  Take a look at these network diagrams for inspiration.
+                  <div class="imageContainer">
+                  <img src="http://www.samplereality.com/gmu/fall2008/343/wp-content/uploads/2008/09/caveoftime.jpg">
+                  <img src="http://infocom.elsewhere.org/gallery/zork1_invisiclues/map-4-5-6-7.jpg">
+                  <img src="http://skullduggery.us/rants/wp-content/uploads/2013/05/Zork-Map.jpg">
+                  <img src="https://source.opennews.org/media/img/uploads/article_images/networkdiagrams_image01.jpg">
+                  <img src="http://www.polzleitner.com/epep/Reading/year2-3/Choose-adventure/decision-tree2.JPG">
+
+                  </div>
+                 
+                  
+
+                </p>
+
+              </div>
+              <br /><br />
+              <h3><a href="javascript:showCurrentAssignment('#project2PartB');">Project 2, Part B -- Due Weds October 5</a></h3>
+              <div id="project2PartA"><br />
+                <p>
+                  Come to class with the first few scenes implemented in processing code. Here are some samples to get you started<br />
+                  <a href="https://adamferriss.com/fall16/182/9-26/loadingImages/">Loading Images</a><br />
+                  <a href="https://adamferriss.com/fall16/182/9-26/loadingText/">Loading Text</a><br />
+                  <a href="https://adamferriss.com/fall16/182/9-26/storyCodeFromClass/">Story code from class</a><br />
+                  <a href="https://adamferriss.com/fall16/182/9-26/storyFramework/">Example Framework</a> <br />
+                  <a href="https://adamferriss.com/fall16/182/9-26/storyWithChoices/">Story with images, text, and choices</a><br />
+                  <a href="https://adamferriss.com/fall16/182/9-28/simpleButton/">Simple Button</a><br />
+                  <a href="https://adamferriss.com/fall16/182/9-28/twoChoicesButtons/">Two Choices &amp; Buttons</a><br /><br />
+
+                  Here's little short story if you're having trouble getting started writing...<a href="https://www.wired.com/1997/01/ffsupertoys/">Do supertoys last all summer long</a>
+                </p>
+
+              </div>
+
+        </div>
+
+
+        <div id="resources" class="section" >
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <a href="https://www.processing.org/handbook/">
+                Processing: A Programming Handbook for Visual Designers and Artists, 2nd Edition, by Casey Reas and Ben Fry.
+              </a>
+            </li>
+            <li>
+              <a href="https://vimeo.com/channels/introcompmedia">
+                Computer Programming for the Total Beginner, by Dan Shiffman. 
+              </a>
+            </li>
+            <li>
+              <a href="http://learningprocessing.com/">
+                Learning Processing, by Daniel Shiffman
+              </a>
+            </li>
+            <li>
+              <a href="http://natureofcode.com/">
+                The Nature of Code by Daniel Shiffman
+              </a>
+            </li>
+            <li>
+              Getting Started with Processing by Casey Reas and Ben Fry. O'Reilly / MAKE, 2010
+            </li>
+            <li>
+              FORM+CODE in Design, Art, and Architecture by Casey Reas and Chandler McWilliams. Princeton Architectural Press, 2010
+            </li>
+            <li>
+              <a href="https://www.processing.org/reference/">
+                Processing Referenc
+              </a>
+            </li>
+            <li>
+              <a href="https://www.processing.org/examples/">
+                Processing Examples
+              </a>
+            </li>
+            <li>
+              <a href="https://forum.processing.org/two/">
+                Processing Forum
+              </a>
+            </li>
+            <li>
+              <a href="http://p5js.org/reference/">
+                p5.js Reference
+              </a>
+            </li>
+            <li>
+              <a href="http://www.creativeapplications.net/">
+                Creative Applications Network
+              </a>
+            </li>
+            <li>
+              <a href="http://openprocessing.org/">
+                Open Processing
+              </a>
+            </li>
+            <li>
+              <a href="http://reas.com/">
+                Casey Reas’ work database
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="schedule" class="section">
+          <h3>Schedule</h3><br /><br />
+          <h3>Mon August 29</h3>
+          <ul>
+            <li>Hello!</li>
+            <li>Syllabus</li>
+            <li>Assign Presentations</li>
+            <li>Assign Form + Code Reading</li>
+          </ul>
+          <br /><br />
+          <h3>Weds August 31</h3>
+          <ul>
+            <li>Due: Presentations</li>
+            <li>Due: Form + Code Reading</li>
+            <li>Presentations</li>
+            <li>Assign Project 1, Part A</li>
+            <li>Workshop 1</li>
+          </ul>
+<br /><br />
+          <h3>Mon September 5</h3>
+            <ul>
+              <li>Labor Day - No Class</li>
+            </ul>
+            <br /><br />
+          <h3>Weds September 7</h3>
+            <ul>
+              <li>Due Project 1, Part A</li>
+              <li>Assign Project 1, Part B</li>
+              <li>Workshop 2</li>
+            </ul>
+<br /><br />
+
+          <h3>Mon September 12</h3>
+          <ul>
+            <li>Project 1, Part B Studio
+            </li>
+          </ul>
+          <br /><br />
+          <h3>Weds September 14</h3>
+          <ul>
+            <li>Due: Project 1, Part B</li>
+            <li>Assign Project 1, Part C</li>
+            <li>Workshop 3</li>
+          </ul>
+<br /><br />
+          <h3>Mon September 19</h3>
+          <ul>
+            <li>Project 1, Part C Studio</li>
+          </ul>
+          <br /><br />
+          <h3>Weds September 21</h3>
+          <ul>
+            <li>Assign Project 2, Part A</li>
+            <li>Workshop 4</li>
+          </ul>
+<br /><br />
+          <h3>Mon September 26</h3>
+          <ul>
+            <li>Due: Project 1, Part C</li>
+            <li>Project 2, Part A Studio</li>
+          </ul>
+          <br /><br />
+          <h3>Weds September 28</h3>
+          <ul>
+            <li>Due: Project 2, Part A</li>
+            <li>Assign Project 2, Part B</li>
+          </ul>
+<br /><br />
+          <h3>Mon October 3</h3>
+          <ul>
+            <li>Project 2, Part B Studio</li>
+          </ul>
+          <br /><br />
+          <h3>Weds October 5</h3>
+          <ul>
+            <li>Due: Project 2, Part B</li>
+            <li>Assign Project 2, Part C</li>
+            <li>Workshop 6</li>
+          </ul>
+<br /><br />
+          <h3>Mon October 10</h3>
+          <ul>
+            <li>Project 2, Part C Studio</li>
+          </ul>
+<br /><br />
+          <h3>Weds October 12</h3>
+          <ul>
+            <li>Due: Project 2, Part C</li>
+            <li>Assign Project 3, Part A</li>
+            <li>Workshop 7</li>
+          </ul>
+<br /><br />
+          <h3>Mon October 17</h3>
+          <ul>
+            <li>Project 3, Part A Studio</li>
+          </ul>
+<br /><br />
+          <h3>Weds October 19</h3>
+          <ul>
+            <li>Due: Project 3, Part A</li>
+            <li>Assign Project 3, Part B</li>
+            <li>Workshop 8</li>
+          </ul>
+<br /><br />
+          <h3>Mon October 24</h3>
+          <ul>
+            <li>Project 3, Part B Studio</li>
+          </ul>
+<br /><br />
+          <h3>Weds October 26</h3>
+          <ul>
+            <li>Due: Project 3, Part B</li>
+            <li>Workshop 9</li>
+            <li>Assign Project 4</li>
+          </ul>
+<br /><br />
+          <h3>Mon October 31</h3>
+          <ul>
+            <li>Project 4 Studio</li>
+          </ul>
+<br /><br />
+          <h3>Weds November 2</h3>
+          <ul>
+            <li>Due: Project 4</li>
+            <li>Midterm critique</li>
+          </ul>
+<br /><br />
+          <h3>Mon November 7</h3>
+          <ul>
+            <li>Workshop 10</li>
+            <li>Assign Project 5, Part A</li>
+          </ul>
+<br /><br />
+          <h3>Weds November 9</h3>
+          <ul>
+            <li>Project 5, Part A Studio</li>
+          </ul>
+<br /><br />
+          <h3>Mon November 14</h3>
+          <ul>
+            <li>Due: Project 5, Part A</li>
+            <li>Workshop 11</li>
+            <li>Assign Project 5, Part B</li>
+          </ul>
+<br /><br />
+          <h3>Weds November 16</h3>
+          <ul>
+            <li>Project 5, Part B Studio</li>
+          </ul>
+<br /><br />
+          <h3>Mon November 21</h3>
+          <ul>
+            <li>Due: Project 5, Part B</li>
+            <li>Workshop 12</li>
+            <li>Assign Project 5, Part C</li>
+          </ul>
+<br /><br />
+          <h3>Weds November 23</h3>
+          <ul>
+            <li>No Class - Thanksgiving Break</li>
+          </ul>
+<br /><br />
+          <h3>Mon November 28</h3>
+          <ul>
+            <li>Project 5, Part C Studio</li>
+          </ul>
+<br /><br />
+          <h3>Weds November 30</h3>
+          <ul>
+            <li>Due: Project 5, Part C</li>
+            <li>Project 5, Playthroughs</li>
+            <li>Assign Final Project</li>
+          </ul>
+<br /><br />
+          <h3>Mon December 5</h3>
+          <ul>
+            <li>Due: Final Project Proposals</li>
+            <li>In class work time</li>
+          </ul>
+<br /><br />
+          <h3>Weds December 7</h3>
+          <ul>
+            <li>In class work time</li>
+          </ul>
+<br /><br />
+          <h3>Mon December 12</h3>
+          <ul>
+            <li>Final Critiques A</li>
+          </ul>
+<br /><br />
+          <h3>Weds December 14</h3>
+          <ul>
+            <li>Final Critiques B</li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <script>
+      $("#schedule").hide();
+      $("#resources").hide();
+      $("#projects").show();
+      $("#syllabus").hide();
+      $("#assignment0").hide();
+      $("#project1PartA").hide();
+      $("#project1PartB").hide();
+      $("#project1PartC").hide();
+      $("#project2PartA").hide();
+
+      function showOnlyOne(id, link){
+        $('.section').each(function(index){
+          if($(this).attr("id") == id){
+            $(this).show(200);
+
+          } else{
+            $(this).hide(200);
+          }
+        });
+      }
+
+      function showCurrentAssignment(link){
+          $(link).toggle(200);
+      }
+
+
+      var fileextension = [".png", ".jpg", ".gif", ".bmp", ".jpeg"];
+      var imgs = [];
+      loadImages("8-31/images/", "#project1Imgs");
+
+      function loadImages(dir, element){
+        $.ajax({
+            url: dir,
+            success: function (data) {   
+            $(data).find("a:contains(" + (fileextension[0]) + "), a:contains(" + (fileextension[1]) + "), a:contains(" + (fileextension[2]) + "), a:contains("+ fileextension[3] +"), a:contains("+fileextension[4]+")" ).each(function () {
+                    var filename = this.href.replace(window.location, "");//.replace(window.location.href, "").replace("http:///", "");
+                    imgs.push(filename);
+                });
+
+                for(var i = 0; i<imgs.length; i++){
+                    $(element).append($("<img class='cv' src=" + dir + imgs[i] + "></img>"));
+                }
+            }
+        });
+      }
+
+
+
+    </script>
+</body>
+
+
+</script>
+</html>
