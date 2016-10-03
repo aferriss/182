@@ -1,0 +1,11 @@
+Hello!
+Instructor Intro
+Student Intro
+syllabus
+assign presentations and reading
+processing website 
+processing examples
+single programmer / computer exercise
+programmer / computer group split
+drawing instructions
+if time allows start going over processing interface and basic shapes examples
