@@ -31,13 +31,13 @@ void draw(){
   fill(0);
   text("DING DONG", button1.x + button1.buttonWidth/2, button1.y + button1.buttonHeight/2);
   
-  // if the mouse is inside button1 and not already playing the sound...play it!
-  if(button1.mouseInside){
-    if(dingdong.isPlaying() == 0){
-      dingdong.play();
-    }
-  // else if the mouse is not in button one, stop playing the sound
-  } else if(!button1.mouseInside){
-    dingdong.stop();
-  }
+
+}
+
+
+void mousePressed(){
+ // if the mouse is inside button1 ...play it!
+ if(button1.mouseInside){
+  dingdong.play();
+ }
 }
