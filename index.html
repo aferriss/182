@@ -365,9 +365,7 @@ Outside Study, six hours.
                 <div id="project3PartC">
                   For Monday please come to class with your completed drawing tools ready to turn in. I will collect them during class time.
                 </div>
-
-                <br />
-              <h3><b><a href="javascript:showCurrentAssignment('#project4PartA');">Project 4, Part A -- Due Weds November 2</b></a></h3>
+              <h3><a href="javascript:showCurrentAssignment('#project4PartA');">Project 4, Part A -- Due Weds November 2</a></h3>
                 <div id="project4PartA">
                   For project 4 we will be making small animation sketches a la <a href="http://patatap.com/">patatap</a>. Come to class on Wednesday with at least two animation ideas sketched out on paper / photoshop / illustrator. For each idea, make three drawings — A beginning frame (what the animation looks like when it begins), a middle frame ( what it looks like during transition), and an endframe (what it looks like at the last frame). This will help guide your coding. <br /><br />
 
@@ -381,15 +379,23 @@ Outside Study, six hours.
                   <a href="https://www.youtube.com/watch?v=RXWO3mFuW-I">Arrays and Loops</a><br />
                   <a href="https://www.youtube.com/watch?v=pGkSHeEZLMU">Arrays of Objects</a><br />
                 </div>
-                <br />
-              <h3><b><a href="javascript:showCurrentAssignment('#project4PartB');">Project 4, Part B -- Due Mon November 7</b></a></h3>
+              <h3><a href="javascript:showCurrentAssignment('#project4PartB');">Project 4, Part B -- Due Mon November 7</a></h3>
               <div id="project4PartB">
                 For Monday Nov. 7th, come to class with your animation implemented in p5.js code using functions. We will convert your code to an object / class during studio time. Please don't hesitate to e-mail me if you get stuck programming your animation!
               </div>
-                <br />
-                <h3><b><a href="javascript:showCurrentAssignment('#project4PartC);">Project 4, Part C -- Due Mon November 14</b></a></h3>
+                <h3><a href="javascript:showCurrentAssignment('#project4PartC);">Project 4, Part C -- Due Mon November 14</a></h3>
               <div id="project4PartC">
                 For Monday Nov. 14th, come to class with your animation implemented in p5.js as a class. Have the code ready to turn in. It's important that your code be represented as a class so that it can be implemented into our larger patatap project.
+              </div>
+              <br />
+              <h3><a href="javascript:showCurrentAssignment('#project5PartA);"><b>Project 5, Part A -- Due Mon November 21</b></a></h3>
+              <div id="project5PartA">
+                For the last project we will be making games. We will be using the basic framework of pong as a jumping off point for exploring ideas of interaction and play. Create an alternate / reimagined version of Pong from code that we constructed together in class. Think about different ways in which you could change the gameplay using the basic elements of the game. For example, you could have multiple balls, more than two paddles, or shrink the paddles when they are hit. Your game does not have to be a game in the traditional sense. You may also use this as an opportunity to construct an 'art game' that creates an image. The final piece needs to have the following elements : <br />1. A paddle (or paddles / platforms). <br />2. A ball <br />3. A start, win, and lose screen.<br/><br /> You may use the <a href="http://p5play.molleindustria.org/">p5.play library</a> if you would like. Check out <a href="http://www.ferryhalim.com/orisinal/">Ferry Halim's site</a> for inspiration.
+
+                <br /><br />
+                For Monday the 21st come to class with a separate p5 sketch for each of the win, lose, and start screens. Also bring with you a storyboard of your game and how you want the mechanics of it to operate.
+                <br /><br />
+
               </div>
 
         </div>
@@ -674,6 +680,10 @@ Outside Study, six hours.
       $("#project2PartC").hide();
       $("#project3PartA").hide();
       $("#project3PartB").hide();
+      $("#project3PartC").hide();
+      $("#project4PartA").hide();
+      $("#project4PartB").hide();
+      $("#project4PartC").hide();
 
       function showOnlyOne(id, link){
         $('.section').each(function(index){
