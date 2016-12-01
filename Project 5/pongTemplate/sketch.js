@@ -2,13 +2,20 @@ var paddle1;
 var paddle2;
 var ball;
 
+var p1Score = 0;
+var p2Score = 0;
+
+var balls = [];
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  paddle1 = new Paddle(20, windowHeight / 2, 20, 100);
-  paddle2 = new Paddle(windowWidth - 40, windowHeight / 2, 20, 100);
+  paddle1 = new Paddle(20, windowHeight / 2, 5, 100);
+  paddle2 = new Paddle(windowWidth - 40, windowHeight / 2, 5, 100);
 
   ball = new Ball();
+  balls.push(ball);
+
 }
 
 function draw() {
@@ -20,10 +27,17 @@ function draw() {
   paddle2.display();
   paddle2.move();
 
-  ball.display();
-  ball.move();
-  ball.bounce(paddle1);
-  ball.bounce(paddle2);
+  for(var i = 0; i<balls.length; i++){
+    balls[i].display();
+    balls[i].move();
+    balls[i].bounce(paddle1);
+    balls[i].bounce(paddle2);
+  }
+  
+  fill(255);
+  text(p1Score, windowWidth/2 - windowWidth/4, 30);
+  text(p2Score, windowWidth/2 + windowWidth/4, 30);
+  
 }
 
 function Ball() {
@@ -49,21 +63,42 @@ function Ball() {
       this.y += this.speedY;
     }
     
-    if(this.x < 0 || this.x > windowWidth){
+    // if(this.x < 0 || this.x > windowWidth){
+    //   this.reset();
+    // }
+    
+    if(this.x < 0 ){
+      p2Score ++;
+      this.reset();
+    }
+    
+    if(this.x + this.ballSize > windowWidth ){
+      p1Score ++;
       this.reset();
     }
     
   }
 
   this.bounce = function(paddle) {
-    if (this.x > paddle.x &&
+    if (this.x + this.ballSize > paddle.x &&
       this.x < paddle.x + paddle.width &&
-      this.y > paddle.y &&
+      this.y + this.ballSize > paddle.y &&
       this.y < paddle.y + paddle.height) {
-
+      
       this.speedX *= -1;
       this.x += this.speedX;
+      
+      if(balls.length < 10){
+        var another = new Ball();
+        another.speedX = this.speedX ;//* random(1.5);
+        another.speedY = this.speedY * random(1.5);
+        another.x = this.x;
+        another.y = this.y;
+        balls.push(another);
+      }
     }
+    
+    
   }
   
   this.reset = function(){
